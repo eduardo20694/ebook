@@ -479,3 +479,31 @@ img { max-width: 100%; display: block; border-radius: 12px; object-fit: cover; }
   transform: translateX(0) translateY(0);
 }
 
+/* ===============================
+   Testemunhos com texto
+   =============================== */
+.testimonial .images {
+  flex-direction: column; /* já fica responsivo */
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+}
+
+.testimonial .images p {
+  font-size: 0.95rem;
+  color: var(--text);
+  line-height: 1.4;
+  margin: 0;
+}
+
+.testimonial .images p strong {
+  color: var(--brand-2); /* destaque no nome */
+}
+
+/* Ajuste responsivo */
+@media (max-width: 600px) {
+  .testimonial {
+    max-width: 90%;
+    padding: 16px;
+  }
+}
