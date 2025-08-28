@@ -96,12 +96,27 @@ document.querySelectorAll('.btn').forEach(b=>{
 });
 
 const people = [
-  "Mariana", "Ana", "Fernanda", "Jéssica", "Luana",
-  "Carolina", "Beatriz", "Patrícia", "Amanda", "Sofia",
-  "Larissa", "Camila", "Gabriela", "Letícia", "Isabela",
-  "Renata", "Marcela", "Aline", "Juliana", "Tatiane",
-  "Rafaela", "Bianca", "Vanessa", "Priscila", "Daniela",
-  "Eliane", "Viviane", "Michele", "Carla", "Natália"
+  "Mariana Silva", "Ana Costa", "Fernanda Souza", "Jéssica Oliveira", "Luana Almeida",
+  "Carolina Pereira", "Beatriz Lima", "Patrícia Gomes", "Amanda Rocha", "Sofia Martins",
+  "Larissa Fernandes", "Camila Ribeiro", "Gabriela Carvalho", "Letícia Alves", "Isabela Santos",
+  "Renata Mendes", "Marcela Pinto", "Aline Barbosa", "Juliana Costa", "Tatiane Dias",
+  "Rafaela Moreira", "Bianca Rodrigues", "Vanessa Nunes", "Priscila Monteiro", "Daniela Vieira",
+  "Eliane Cardoso", "Viviane Araújo", "Michele Farias", "Carla Correia", "Natália Tavares",
+  "Patrícia Lima", "Bruna Machado", "Elaine Barbosa", "Amanda Costa", "Juliana Castro",
+  "Fernanda Pires", "Camila Santos", "Larissa Rodrigues", "Carolina Figueiredo", "Beatriz Teixeira",
+  "Renata Moraes", "Mariana Cunha", "Tatiane Almeida", "Jéssica Fernandes", "Sofia Rocha",
+  "Isabela Oliveira", "Vanessa Silva", "Rafaela Martins", "Gabriela Pinto", "Aline Nunes",
+  "Marcela Moreira", "Letícia Ribeiro", "Bianca Gomes", "Daniela Costa", "Natália Lima",
+  "Carla Souza", "Camila Araújo", "Juliana Carvalho", "Mariana Barbosa", "Patrícia Dias",
+  "Ana Mendes", "Fernanda Rocha", "Jéssica Alves", "Luana Martins", "Carolina Nunes",
+  "Beatriz Pinto", "Amanda Teixeira", "Sofia Farias", "Larissa Vieira", "Gabriela Cardoso",
+  "Letícia Correia", "Isabela Tavares", "Renata Lima", "Marcela Costa", "Aline Souza",
+  "Juliana Araújo", "Tatiane Carvalho", "Rafaela Barbosa", "Bianca Dias", "Vanessa Mendes",
+  "Daniela Rocha", "Eliane Alves", "Viviane Martins", "Michele Nunes", "Carla Pinto",
+  "Natália Teixeira", "Mariana Farias", "Patrícia Vieira", "Bruna Cardoso", "Elaine Correia",
+  "Amanda Tavares", "Juliana Lima", "Fernanda Costa", "Camila Souza", "Larissa Araújo",
+  "Carolina Carvalho", "Beatriz Barbosa", "Renata Dias", "Mariana Mendes", "Tatiane Rocha",
+  "Jéssica Alves", "Sofia Martins", "Isabela Nunes", "Vanessa Pinto", "Rafaela Teixeira"
 ];
 
 const popup = document.getElementById('socialPopup');
@@ -116,12 +131,13 @@ function showPopup() {
   setTimeout(() => {
     popup.classList.remove('show');
 
-    // Próximo popup entre 20 e 30 segundos
-    const nextDelay = Math.random() * 10000 + 20000;
+    // Próximo popup entre 2 e 4 segundos
+    const nextDelay = Math.random() * 2000 + 2000;
     setTimeout(showPopup, nextDelay);
   }, 5000);
 }
 
 // Inicia o primeiro popup após 5 segundos
 setTimeout(showPopup, 5000);
+
 
